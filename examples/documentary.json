@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "video": {
+    "title": "Example documentary",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "image": "assets/intro.png",
+      "duration_sec": 7,
+      "chapter": "Introduction",
+      "narration": "This is where our story begins.",
+      "caption": "A mystery worth investigating."
+    },
+    {
+      "id": "evidence",
+      "image": "assets/evidence.png",
+      "duration_sec": 9,
+      "narration": "The evidence raised more questions than answers.",
+      "caption": "The evidence."
+    },
+    {
+      "id": "reveal",
+      "image": "assets/reveal.png",
+      "duration_sec": 6,
+      "chapter": "The reveal",
+      "narration": "Here is what happened next."
+    }
+  ]
+}
