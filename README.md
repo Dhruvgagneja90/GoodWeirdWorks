@@ -8,6 +8,18 @@ Practical, free tools for small creative teams. This repository is a public work
 
 This initial open-source release does not synthesize speech, generate images, render animation or claim external adoption.
 
+### Install as a command
+
+Requires Python 3.10+. Clone the repository and run:
+
+```bash
+python3 -m pip install .
+frameledger check examples/documentary.json
+frameledger preview examples/documentary.json --out build
+```
+
+The package is installable from source; **it has not been published to PyPI**. Video rendering requires your own FFmpeg installation. This project is independent of Anthropic and does not offer Claude subscriptions or credits.
+
 ### Quick start
 
 Python 3.10 or later:
@@ -62,4 +74,4 @@ See [usage and schema](docs/frameledger.md), [contribution guide](CONTRIBUTING.m
 
 ## Status
 
-Experimental v0.1.0. No claims about users, downloads, third-party contributors, or suitability for production. Feedback and reproducible bug reports are welcome.
+Experimental v0.2.1. No claims about users, downloads, third-party contributors, or suitability for production. Feedback and reproducible bug reports are welcome.
