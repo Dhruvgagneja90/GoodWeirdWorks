@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "video": {
+    "title": "A Sample Three-Scene Documentary",
+    "width": 640,
+    "height": 360,
+    "fps": 24
+  },
+  "scenes": [
+    {
+      "id": "opening",
+      "image": "demo_assets/intro.png",
+      "audio": "demo_assets/silence.wav",
+      "duration_sec": 1,
+      "chapter": "Opening",
+      "caption": "Every story starts somewhere."
+    },
+    {
+      "id": "evidence",
+      "image": "demo_assets/evidence.png",
+      "duration_sec": 1.5,
+      "chapter": "Evidence",
+      "caption": "A clue changes the picture."
+    },
+    {
+      "id": "reveal",
+      "image": "demo_assets/reveal.png",
+      "duration_sec": 1,
+      "chapter": "Closing",
+      "caption": "The story continues."
+    }
+  ]
+}
