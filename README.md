@@ -34,6 +34,18 @@ python3 tools/production.py render examples/documentary.json --out build
 
 New functionality detects repeated image paths, assesses PNG size/aspect ratio, compares PCM WAV audio length to scene duration, escapes user-supplied text in a standalone HTML preview, and assembles H.264/AAC MP4s locally through FFmpeg. See [production guide](docs/production.md). The sample references deliberately nonexistent assets, so render fails until you supply images. The renderer is a basic still-image assembler, **not** animated video generation.
 
+### Try a fully synthetic render
+
+The following commands generate original placeholder PNG images and a one-second silent WAV for a three-shot demo. Nothing is downloaded or sent to a cloud service.
+
+```bash
+python3 examples/generate_media.py
+python3 tools/production.py preview examples/demo_render.json --out build
+python3 tools/production.py render examples/demo_render.json --out build
+```
+
+Rendering requires FFmpeg with libx264/AAC. The sample is intentionally simple; it only demonstrates that the scene manifest can produce an MP4. For actual documentary production, replace the pictures and narration with your own licensed media.
+
 ### Output
 
 - `build/shotlist.csv`: shot timing, source file and narration
