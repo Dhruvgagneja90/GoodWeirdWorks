@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frameledger-open-tools"
+version = "0.2.1"
+description = "Offline documentary shot planning, media preflight, preview and FFmpeg assembly"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "Dhruv Gagneja"}]
+keywords = ["video", "documentary", "storyboard", "ffmpeg", "shotlist", "subtitles"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Multimedia :: Video",
+]
+
+[project.urls]
+Homepage = "https://github.com/Dhruvgagneja90/GoodWeirdWorks"
+Issues = "https://github.com/Dhruvgagneja90/GoodWeirdWorks/issues"
+Documentation = "https://github.com/Dhruvgagneja90/GoodWeirdWorks/blob/main/docs/production.md"
+
+[project.scripts]
+frameledger = "tools.production:main"
+
+[tool.setuptools]
+packages = ["tools"]
