@@ -17,3 +17,5 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Validate example manifest
         run: python tools/frameledger.py check examples/documentary.json
+      - name: Preview production workflow
+        run: python tools/production.py preview examples/documentary.json --out build
